@@ -5,6 +5,7 @@ import com.Challenge.Foro.domain.curso.ActualizarCursoDTO;
 import com.Challenge.Foro.domain.curso.CrearCursoDTO;
 import com.Challenge.Foro.domain.curso.CursoDTO;
 import com.Challenge.Foro.domain.curso.CursoService;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.data.domain.Page;
@@ -17,6 +18,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @ResponseBody
 @RequestMapping("/cursos")
+@SecurityRequirement(name = "bearer-key")
 public class CursoController {
 
     @Autowired

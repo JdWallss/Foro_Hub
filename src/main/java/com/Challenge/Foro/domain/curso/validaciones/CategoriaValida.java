@@ -1,7 +1,7 @@
 package com.Challenge.Foro.domain.curso.validaciones;
 
 import com.Challenge.Foro.domain.curso.CrearCursoDTO;
-import com.Challenge.Foro.infra.ValidacionDeIntegridad;
+import com.Challenge.Foro.infra.errores.ValidacionDeIntegridad;
 import org.springframework.stereotype.Component;
 
 @Component

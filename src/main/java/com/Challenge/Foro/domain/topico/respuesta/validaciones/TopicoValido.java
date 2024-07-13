@@ -2,7 +2,7 @@ package com.Challenge.Foro.domain.topico.respuesta.validaciones;
 
 import com.Challenge.Foro.domain.topico.TopicoRepository;
 import com.Challenge.Foro.domain.topico.respuesta.CrearRespuestaDTO;
-import com.Challenge.Foro.infra.ValidacionDeIntegridad;
+import com.Challenge.Foro.infra.errores.ValidacionDeIntegridad;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

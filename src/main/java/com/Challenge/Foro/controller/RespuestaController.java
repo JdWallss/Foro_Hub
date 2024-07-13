@@ -4,6 +4,7 @@ import com.Challenge.Foro.domain.topico.respuesta.CrearRespuestaDTO;
 import com.Challenge.Foro.domain.topico.respuesta.EditarRespuestaDTO;
 import com.Challenge.Foro.domain.topico.respuesta.EstadoRespuestaDTO;
 import com.Challenge.Foro.domain.topico.respuesta.RespuestaService;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @ResponseBody
 @RequestMapping("/respuestas")
+@SecurityRequirement(name = "bearer-key")
 public class RespuestaController {
 
     @Autowired

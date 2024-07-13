@@ -4,6 +4,7 @@ import com.Challenge.Foro.domain.topico.ActualizarTopicoDTO;
 import com.Challenge.Foro.domain.topico.CrearTopicoDTO;
 import com.Challenge.Foro.domain.topico.TopicoDTO;
 import com.Challenge.Foro.domain.topico.TopicoService;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.data.domain.Page;
@@ -16,7 +17,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @ResponseBody
 @RequestMapping("/topicos")
-// @SecurityRequirement(name = "bearer-key")
+@SecurityRequirement(name = "bearer-key")
 public class TopicoController {
 
     @Autowired

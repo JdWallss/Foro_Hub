@@ -2,7 +2,7 @@ package com.Challenge.Foro.domain.curso;
 
 import com.Challenge.Foro.domain.curso.validaciones.ValidadorCurso;
 import com.Challenge.Foro.domain.topico.TopicoRepository;
-import com.Challenge.Foro.infra.ValidacionDeIntegridad;
+import com.Challenge.Foro.infra.errores.ValidacionDeIntegridad;
 import jakarta.validation.ValidationException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;

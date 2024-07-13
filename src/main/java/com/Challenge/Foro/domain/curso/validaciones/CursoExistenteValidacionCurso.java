@@ -2,7 +2,7 @@ package com.Challenge.Foro.domain.curso.validaciones;
 
 import com.Challenge.Foro.domain.curso.CrearCursoDTO;
 import com.Challenge.Foro.domain.curso.CursoRepository;
-import com.Challenge.Foro.infra.ValidacionDeIntegridad;
+import com.Challenge.Foro.infra.errores.ValidacionDeIntegridad;
 import jakarta.validation.ValidationException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
